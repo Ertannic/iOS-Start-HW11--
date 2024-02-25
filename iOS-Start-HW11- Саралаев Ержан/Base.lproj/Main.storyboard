@@ -35,11 +35,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5s-ew-06o">
-                                <rect key="frame" x="175.66666666666666" y="115.66666666666669" width="42" height="21"/>
+                                <rect key="frame" x="175.66666666666666" y="115.66666666666667" width="42" height="21.000000000000014"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9j1-Qf-aWw">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,10 +54,13 @@
                             <constraint firstItem="gGG-GI-eZW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="ddX-E7-wQu"/>
                             <constraint firstItem="OBu-at-2Zo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="eWm-Gw-XFy"/>
                             <constraint firstItem="gGG-GI-eZW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="juV-my-42Q"/>
+                            <constraint firstItem="9j1-Qf-aWw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qYN-fP-Mt7"/>
+                            <constraint firstItem="9j1-Qf-aWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vAH-ZK-bqP"/>
                             <constraint firstItem="U5s-ew-06o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOY-IC-BaB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button" destination="9j1-Qf-aWw" id="cHH-nN-Nha"/>
                         <outlet property="label" destination="U5s-ew-06o" id="Mbv-jz-Hum"/>
                         <outlet property="loginTextField" destination="gGG-GI-eZW" id="qlN-aY-s9e"/>
                         <outlet property="passworldTextField" destination="OBu-at-2Zo" id="BeF-Kn-9K8"/>
