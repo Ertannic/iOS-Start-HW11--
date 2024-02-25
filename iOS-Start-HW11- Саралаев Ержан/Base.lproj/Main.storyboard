@@ -34,17 +34,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5s-ew-06o">
+                                <rect key="frame" x="175.66666666666666" y="115.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OBu-at-2Zo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vw-LH-AP0"/>
+                            <constraint firstItem="U5s-ew-06o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="BDd-du-n8d"/>
                             <constraint firstItem="gGG-GI-eZW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="ddX-E7-wQu"/>
                             <constraint firstItem="OBu-at-2Zo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="eWm-Gw-XFy"/>
                             <constraint firstItem="gGG-GI-eZW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="juV-my-42Q"/>
+                            <constraint firstItem="U5s-ew-06o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOY-IC-BaB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="label" destination="U5s-ew-06o" id="Mbv-jz-Hum"/>
                         <outlet property="loginTextField" destination="gGG-GI-eZW" id="qlN-aY-s9e"/>
                         <outlet property="passworldTextField" destination="OBu-at-2Zo" id="BeF-Kn-9K8"/>
                     </connections>

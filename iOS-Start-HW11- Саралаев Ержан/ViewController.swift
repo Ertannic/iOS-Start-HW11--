@@ -9,13 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passworldTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        view.backgroundColor = .systemPurple
+        
+        // MARK: - loginLabel
+        label.text = "Login"
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: UIFont.preferredFont(forTextStyle: .largeTitle).pointSize)
+        label.numberOfLines = 5
+        label.textAlignment = .center
+        
         
         // MARK: - loginField
         loginTextField.layer.shadowColor = UIColor.black.cgColor
@@ -38,7 +47,6 @@ class ViewController: UIViewController {
         loginTextField.setupLeftSideImage(ImageViewNamed: "emailImage")
 
         // MARK: - passworldField
-        
         passworldTextField.layer.shadowColor = UIColor.black.cgColor
         passworldTextField.layer.shadowOpacity = 0.3
         passworldTextField.layer.shadowOffset = .zero
