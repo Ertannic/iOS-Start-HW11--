@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
         // MARK: - loginField
         loginTextField.layer.shadowColor = UIColor.black.cgColor
         loginTextField.layer.shadowOpacity = 0.3
@@ -23,14 +25,18 @@ class ViewController: UIViewController {
         loginTextField.layer.shouldRasterize = true
         loginTextField.layer.rasterizationScale = UIScreen.main.scale
         loginTextField.textColor = .gray
-        loginTextField.textAlignment = .center
+        let firstLeftSpacerView = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: loginTextField.frame.height))
+        loginTextField.leftView = firstLeftSpacerView
+        loginTextField.leftViewMode = .always
+        loginTextField.textAlignment = .left
         loginTextField.placeholder = "Email"
         loginTextField.layer.borderColor = UIColor.black.cgColor
         loginTextField.clipsToBounds = true
         loginTextField.layer.cornerRadius = 20
         loginTextField.layer.borderWidth = 0.2
         loginTextField.layer.masksToBounds = true
-        
+        loginTextField.setupLeftSideImage(ImageViewNamed: "emailImage")
+
         // MARK: - passworldField
         
         passworldTextField.layer.shadowColor = UIColor.black.cgColor
@@ -40,16 +46,30 @@ class ViewController: UIViewController {
         passworldTextField.layer.shouldRasterize = true
         passworldTextField.layer.rasterizationScale = UIScreen.main.scale
         passworldTextField.textColor = .gray
-        passworldTextField.textAlignment = .center
+        let leftSpacerView = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: passworldTextField.frame.height))
+        passworldTextField.leftView = leftSpacerView
+        passworldTextField.leftViewMode = .always
+        passworldTextField.textAlignment = .left
         passworldTextField.placeholder = "Password"
         passworldTextField.layer.borderColor = UIColor.black.cgColor
         passworldTextField.clipsToBounds = true
         passworldTextField.layer.cornerRadius = 20
         passworldTextField.layer.borderWidth = 0.2
         passworldTextField.layer.masksToBounds = true
+        passworldTextField.setupLeftSideImage(ImageViewNamed: "passwordImage")
         
     }
-
-
 }
 
+extension UITextField {
+    
+    func setupLeftSideImage(ImageViewNamed:String){
+        let imageView = UIImageView(frame: CGRect(x: 10, y: 5, width: 20, height: 20))
+        imageView.image = UIImage(named: ImageViewNamed)
+        let imageViewContainerView = UIView(frame: CGRect(x: 20, y: 0, width: 30, height: 30))
+        imageViewContainerView.addSubview(imageView)
+        leftView = imageViewContainerView
+        leftViewMode = .always
+        self.tintColor = .lightGray
+    }
+}
