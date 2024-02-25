@@ -50,9 +50,12 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyw-wb-3kx">
-                                <rect key="frame" x="159" y="459" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyw-wb-3kx">
+                                <rect key="frame" x="46.666666666666657" y="501" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="I7h-4a-eCh"/>
+                                    <constraint firstAttribute="height" constant="50" id="w1L-5a-L3I"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
@@ -61,17 +64,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OBu-at-2Zo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vw-LH-AP0"/>
+                            <constraint firstItem="Tyw-wb-3kx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Zf-yV-wCy"/>
                             <constraint firstItem="U5s-ew-06o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="BDd-du-n8d"/>
                             <constraint firstItem="gGG-GI-eZW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="ddX-E7-wQu"/>
                             <constraint firstItem="OBu-at-2Zo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="eWm-Gw-XFy"/>
                             <constraint firstItem="gGG-GI-eZW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="juV-my-42Q"/>
                             <constraint firstItem="9j1-Qf-aWw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qYN-fP-Mt7"/>
+                            <constraint firstItem="Tyw-wb-3kx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="rz7-K8-Gs7"/>
                             <constraint firstItem="9j1-Qf-aWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vAH-ZK-bqP"/>
                             <constraint firstItem="U5s-ew-06o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOY-IC-BaB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="9j1-Qf-aWw" id="cHH-nN-Nha"/>
+                        <outlet property="forgotButton" destination="Tyw-wb-3kx" id="5WS-u6-tBP"/>
                         <outlet property="label" destination="U5s-ew-06o" id="Mbv-jz-Hum"/>
                         <outlet property="loginTextField" destination="gGG-GI-eZW" id="qlN-aY-s9e"/>
                         <outlet property="passworldTextField" destination="OBu-at-2Zo" id="BeF-Kn-9K8"/>

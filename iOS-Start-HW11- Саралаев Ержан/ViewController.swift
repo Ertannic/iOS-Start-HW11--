@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var passworldTextField: UITextField!
     
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var forgotButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemPurple
+        view.backgroundColor = .systemMint
         
         // MARK: - loginLabel
         label.text = "Login"
@@ -68,7 +69,7 @@ class ViewController: UIViewController {
         passworldTextField.isSecureTextEntry = true
         passworldTextField.setupLeftSideImage(ImageViewNamed: "passwordImage")
         
-        //MARK: - UIButton
+        // MARK: - UIButton
         
         button.layer.shadowColor = UIColor.black.cgColor
         button.layer.shadowOpacity = 0.3
@@ -81,6 +82,11 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = 25
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.white, for: .normal)
+        
+        // MARK: - UIForgotButton
+        
+        forgotButton.setTitle("Forgot your password?", for: .normal)
+        forgotButton.setTitleColor(.white, for: .normal)
     }
 }
 
