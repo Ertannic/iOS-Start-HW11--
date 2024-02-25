@@ -68,8 +68,23 @@ class ViewController: UIViewController {
         passworldTextField.isSecureTextEntry = true
         passworldTextField.setupLeftSideImage(ImageViewNamed: "passwordImage")
         
+        //MARK: - UIButton
+        
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.3
+        button.layer.shadowOffset = .zero
+        button.layer.shadowRadius = 10
+        button.layer.shouldRasterize = true
+        button.layer.rasterizationScale = UIScreen.main.scale
+        button.backgroundColor = .systemIndigo
+        button.clipsToBounds = true
+        button.layer.cornerRadius = 25
+        button.setTitle("Login", for: .normal)
+        button.setTitleColor(.white, for: .normal)
     }
 }
+
+// MARK: - Extensions
 
 extension UITextField {
     
