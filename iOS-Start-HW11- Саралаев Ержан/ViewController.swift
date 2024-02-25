@@ -31,6 +31,23 @@ class ViewController: UIViewController {
         loginTextField.layer.borderWidth = 0.2
         loginTextField.layer.masksToBounds = true
         
+        // MARK: - passworldField
+        
+        passworldTextField.layer.shadowColor = UIColor.black.cgColor
+        passworldTextField.layer.shadowOpacity = 0.3
+        passworldTextField.layer.shadowOffset = .zero
+        passworldTextField.layer.shadowRadius = 10
+        passworldTextField.layer.shouldRasterize = true
+        passworldTextField.layer.rasterizationScale = UIScreen.main.scale
+        passworldTextField.textColor = .gray
+        passworldTextField.textAlignment = .center
+        passworldTextField.placeholder = "Password"
+        passworldTextField.layer.borderColor = UIColor.black.cgColor
+        passworldTextField.clipsToBounds = true
+        passworldTextField.layer.cornerRadius = 20
+        passworldTextField.layer.borderWidth = 0.2
+        passworldTextField.layer.masksToBounds = true
+        
     }
 
 
