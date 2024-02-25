@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passworldTextField: UITextField!
     
+    @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,6 +65,7 @@ class ViewController: UIViewController {
         passworldTextField.layer.cornerRadius = 20
         passworldTextField.layer.borderWidth = 0.2
         passworldTextField.layer.masksToBounds = true
+        passworldTextField.isSecureTextEntry = true
         passworldTextField.setupLeftSideImage(ImageViewNamed: "passwordImage")
         
     }
